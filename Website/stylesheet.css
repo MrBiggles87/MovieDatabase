@@ -1,0 +1,162 @@
+
+body {
+    background-color:  #ffffff;
+    font-family: sans-serif;
+}
+
+#font {
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgb(153, 153, 153);
+    
+}
+
+
+#btrailers {
+    background-color: #cccccc;
+}
+
+
+
+#hometitle {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px 3px rgb(255, 255, 255), 0 0 25px rgb(206, 206, 206), 0 0 5px rgb(116, 116, 116);
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    line-height: 0%
+}
+
+#subtitle {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px 3px rgb(255, 255, 255), 0 0 25px rgb(206, 206, 206), 0 0 5px rgb(116, 116, 116);
+    font-size: 29px;
+    line-height: 0px
+
+}
+
+.header {
+    background: linear-gradient(to bottom, #8d8d8d 0%, #ffffff 100%);
+    padding: 10px;
+    text-align: center;
+    width: auto;
+    height: 210px;
+}
+
+div[id="bannerimage"] {
+  width: 100%;
+  background-image: url(https://download.hipwallpaper.com/desktop/1920/1080/41/80/GU5q7I.jpeg);
+  height: 210px;
+  background-color: purple;
+  background-position: center;
+}
+
+.footer {
+    
+padding: 15px;
+text-align: center;
+background-image: url(https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+background-position: top;
+position: absolute; 
+bottom:0; 
+width:100%; 
+height:70px;
+        
+}
+
+#headerp {
+    font-family: sans-serif;
+    font-size: 30px
+}
+
+#divnav {
+    display: inline-block;
+    width: 100%;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    justify-content: center;
+    box-shadow: 0 4px 2px 0px rgb(161, 161, 161);
+  }
+  
+  /* Navigation links */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The subnavigation menu */
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Subnav button */
+  .subnav .subnavbtn {
+    font-size: 16px; 
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Add a red background color to navigation links on hover */
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: rgb(99, 99, 99);
+  }
+  
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0px;
+    background-color: rgba(79, 115, 163, 0.61);
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Style the subnav links */
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Add a grey background color on hover */
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+
+  /* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+}
