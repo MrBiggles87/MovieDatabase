@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/bd79197c3d.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;
+    font-size: 20px}
+
+/* Add a blue color to the author */
+.author {color: rgb(40, 97, 204);}
+</style>
+
+</head>
+<body>
+    <div class="header" id="bannerimage">
+        <p id="hometitle"><b><i class="fas fa-1x fa-film"></i> Welcome to VMDb.com </b><i class="fas fa-1x fa-film"></i>
+        <p id="subtitle">The internets unofficial movie database</p>
+        
+    </div>
+
+<div class="navbar" id="divnav">
+   <a href="VMDbV3.html" class="active"><i class="fas fa-home fa-fw"></i> Home</a>
+    <div class="subnav">
+        <button class="subnavbtn"><i class="fas fa-film fa-fw"></i> Movies <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+        <a href="titles.html">Titles</a>
+        <a href="trailers.html">Trailers</a>
+        <a href="quotes.html">Quotes</a>
+    </div>
+</div> 
+    <div class="subnav">
+        <button class="subnavbtn"><i class="far fa-newspaper fa-fw"></i> News <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+        <a href="#bring">Movie</a>
+        <a href="#deliver">TV</a>
+        <a href="#package">Celebrity</a>    
+    </div>
+</div> 
+    <div class="subnav">
+        <button class="subnavbtn"><i class="far fa-address-card fa-fw"></i> About <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+        
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+</div>
+<br><br><br>
+
+
+      
+      
+      
+<div class="w3-container w3-grey" style="text-align: center">
+    <h1>Movie Quotes</h1>
+</div>
+      
+      
+<div class="slideshow-container">
+    <div class="mySlides">
+        <q>Here's to looking at you, Kid.</q>
+        <p class="author">- <b>Casablanca</b>, 1942</p>
+    </div>
+            
+<div class="mySlides">
+    <q>Go ahead, make my day.</q>
+    <p class="author">- <b>Sudden Impact</b>, 1983</p>
+</div>
+            
+<div class="mySlides">
+    <q>May the force be with you.</q>
+    <p class="author">- <b>Star Wars</b>, 1977</p>
+</div>
+
+<div class="mySlides">
+    <q>I love the smell of napalm in the morning.</q>
+    <p class="author">- <b>Apocalypse Now</b>, 1979</p>
+</div>
+
+<div class="mySlides">
+    <q>Show me the money!</q>
+    <p class="author">- <b>Jerry Maguire</b>, 1996</p>
+</div>
+
+<div class="mySlides">
+    <q>You cant handle the truth!</q>
+    <p class="author">- <b>A Few Good Men</b>, 1992</p>
+</div>
+
+<div class="mySlides">
+    <q>You're gonna need a bigger boat.</q>
+    <p class="author">- <b>Jaws</b>, 1975</p>
+</div>
+
+<div class="mySlides">
+    <q>Houston, we have a problem.</q>
+    <p class="author">- <b>Apollo 13</b>, 1995</p>
+</div>
+            
+<a class="prev" onclick="plusSlides(-1)">❮❮</a>
+<a class="next" onclick="plusSlides(1)">❯❯</a>
+            
+</div>
+            
+<div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>  
+</div>
+            
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+            
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+            
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+            
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+    }
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+    }
+</script>     
+
+<br>
+
+<div class="footer">
+    <a href="https://www.facebook.com" i class="fab fa-3x fa-facebook-square fa-fw" id="font"></i></a>
+    <a href="https://www.instagram.com" i class="fab fa-3x fa-instagram fa-fw" id="font"></i></a>
+    <a href="https://twitter.com" i class="fab fa-3x fa-twitter fa-fw" id="font"></i></a>
+    <a href="https://www.youtube.com" i class="fab fa-3x fa-youtube fa-fw" id="font"></i></a>
+</div>
+</body>
+</html>

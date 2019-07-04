@@ -1,8 +1,10 @@
 
 body {
-    background-color:  #ffffff;
+    background-color:  #f8f8f8;
     font-family: sans-serif;
 }
+
+
 
 #font {
     color: rgb(0, 0, 0);
@@ -51,15 +53,19 @@ div[id="bannerimage"] {
 
 .footer {
     
-padding: 15px;
+padding: 5px;
 text-align: center;
 background-image: url(https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
 background-position: top;
-position: absolute; 
+position: fixed; 
 bottom:0; 
 width:100%; 
-height:70px;
+height:50px;
         
+}
+
+a {
+  text-decoration: none;
 }
 
 #headerp {
@@ -159,4 +165,5 @@ height:70px;
     .column {
       width: 100%;
     }
-}
+
+  }

@@ -4,8 +4,17 @@ const request = new XMLHttpRequest();
 request.onload = () => {
     const parsedData = JSON.parse(request.responseText);
     console.log('LoadedData', parsedData);
+    var titles=document.getElementById('Titles')
+    var newTitle=document.createElement("h3");
+    newTitle.id="runtimetitles";
+    for( var i=0;i<parsedData.length;i++){
+         newTitle.innerHTML=parsedData[i].TITLE + " <i> Directed by </i> <b>  " +parsedData[i].director + "</b>" ;
+        titles.append(newTitle);
+    }
+
     /* Movies */
-    document.getElementById('Title1').append(parsedData[0].title);
+    //console.log(parseData);
+    /*document.getElementById('Title1').append(parsedData[0].title);
     document.getElementById('Title2').append(parsedData[1].title);
     document.getElementById('Title3').append(parsedData[2].title);
     document.getElementById('Title4').append(parsedData[3].title);
@@ -27,7 +36,7 @@ request.onload = () => {
     document.getElementById('Title20').append(parsedData[19].title);
     document.getElementById('Title21').append(parsedData[20].title);
 
-    /*Directors*/
+    //Directors/
 
     document.getElementById('Director1').append('Director: ', parsedData[0].director);
     document.getElementById('Director2').append('Director: ', parsedData[1].director);
@@ -51,7 +60,7 @@ request.onload = () => {
     document.getElementById('Director20').append('Director: ', parsedData[19].director);
     document.getElementById('Director21').append('Director: ', parsedData[20].director);
 
-    /*Years*/
+    //Years/
 
     document.getElementById('Year1').append('Year: ', parsedData[0].year);
     document.getElementById('Year2').append('Year: ', parsedData[1].year);
@@ -75,7 +84,7 @@ request.onload = () => {
     document.getElementById('Year20').append('Year: ', parsedData[19].year);
     document.getElementById('Year21').append('Year: ', parsedData[20].year);
 
-    /*Runtimes*/
+    /Runtimes/
 
     document.getElementById('Runtime1').append('Year: ', parsedData[0].runtime);
     document.getElementById('Runtime2').append('Year: ', parsedData[0].runtime);
@@ -97,7 +106,7 @@ request.onload = () => {
     document.getElementById('Runtime18').append('Year: ', parsedData[0].runtime);
     document.getElementById('Runtime19').append('Year: ', parsedData[0].runtime);
     document.getElementById('Runtime20').append('Year: ', parsedData[0].runtime);
-
+*/
 }
 request.open('GET', 'http://localhost:8080/api/v1/notes');
 request.send();
